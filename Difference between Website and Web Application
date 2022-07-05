@@ -1,0 +1,41 @@
+Website is a collection of web pages which represent or provide information of an oragnization or person or service.                                                         
+
+Performance of a website can be analysed based on exit rate, bounce rate etc.
+
+Websites need not particularly made for a business or for a task completion, they can be for simple information gain or entertainment.
+
+Websites are static
+
+They have two-tier architecture.
+
+Websites can have web applications in their pages.
+
+Websites are not user specific.
+
+Frontend: HTML, CSS, JavaScript, JavaQuery
+
+Examples: Wikipedia
+____________________________________________________________________________
+
+
+Web application is set of programs designed to complete a task or solve a problem. they are of three types Mobile, desktop, cloud.
+
+Web application performance can be measured by user satisfaction.
+
+Web application is made for completing a partiular task.
+
+Web applications are dynamic.
+
+They have three-tier architecture.
+
+The vice versa is not true.
+
+Web applications are user specific. 
+
+Frontend: HTML, CSS, JavaScript, JavaQuery
+
+Backend:Python, Ruby, Java, PHP
+
+Database: SQL, MongoDB
+
+Example: Netflix
