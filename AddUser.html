@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="https://dashboard.helpx.live/assets/images/LOGO.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	
+	<title> Add User</title>
+<style>input[type=file].form-control{
+    padding: .275rem .50rem;
+}</style>
+<style>.card{background-color: #607176;}</style>
+</head>
+
+<body class="bg-theme bg-theme1">
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+
+				<div class="navbar-brand" style="text-align: center;">
+					<a href=""><img style="width:150px; padding-left: 60px;"
+							src="https://dashboard.helpx.live/assets/images/LOGO.png" alt="Helpx " class="img-fluid logo" onclick="history.go(-1)"></a>
+					<button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i
+							class="lnr lnr-menu fa fa-chevron-circle-left"></i></button>
+				</div>
+
+
+
+			</div>
+			<br>
+			<!--navigation-->
+			<!-- <ul class="metismenu" id="menu">
+				<li>
+					<a href="javascript:;" class="">
+						 <div class="parent-icon"><i class='bx bx-user-plus'></i>
+						</div>
+						<div class="menu-title">Add User</div>
+					</a> -->
+					<!-- <ul>
+						<li> <a href="index.html"><i class="bx bx-right-arrow-alt"></i>Default</a>
+						</li>
+						<li> <a href="dashboard-eCommerce.html"><i class="bx bx-right-arrow-alt"></i>eCommerce</a>
+						</li>
+						<li> <a href="dashboard-sales.html"><i class="bx bx-right-arrow-alt"></i>Sales</a>
+						</li>
+						<li> <a href="dashboard-analytics.html"><i class="bx bx-right-arrow-alt"></i>Analytics</a>
+						</li>
+						<li> <a href="dashboard-alternate.html"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
+						</li>
+						<li> <a href="dashboard-digital-marketing.html"><i class="bx bx-right-arrow-alt"></i>Digital Marketing</a>
+						</li>
+						<li> <a href="dashboard-human-resources.html"><i class="bx bx-right-arrow-alt"></i>Human Resources</a>
+						</li>
+					</ul> -->
+				</li>
+				
+                
+				
+                
+						
+                        
+				
+                
+				
+                
+			
+                
+			
+                
+					
+                
+					
+                
+			<!--end navigation-->
+		</div> 
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<<header>
+             <div class="topbar d-flex align-items-center">
+                <nav class="navbar navbar-expand">
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <div id="todaysDate" style="font-weight: 400;font-size:14px;color: #a5a8ad;"></div>
+                    </div>
+                    <script type="text/javascript">
+                        (function () {
+                            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                            s1.async = true;
+                            s1.src = 'https://embed.tawk.to/5e44175da89cda5a188591ec/default';
+                            s1.charset = 'UTF-8';
+                            s1.setAttribute('crossorigin', '*');
+                            s0.parentNode.insertBefore(s1, s0);
+                        })();
+
+                        function doDate() {
+                            var str = "";
+
+                            var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                            var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+                            var now = new Date();
+                            //days[now.getDay()] + ", " +
+                            str += "<i class='icon-clock'></i>  " + now.getDate() + " " + months[now.getMonth()] + ", " + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+                            document.getElementById("todaysDate").innerHTML = str;
+                        }
+
+                        setInterval(doDate, 1000);
+                    </script>
+
+
+                    <div class="top-menu ms-auto">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item mobile-search-icon">
+                                <a class="nav-link" href="#"> <i class='bx bx-search'></i>
+                                </a>
+                            </li>
+
+
+                            <div class="user-box dropdown">
+                                <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img style="width:140px; padding-left: 60px;" src="https://dashboard.helpx.live/assets/images/home_button_helpx_dashboard.png" alt="Helpx " class="img-fluid logo" onclick="history.go(-1)"> 
+                                    <div class="user-info ps-3">
+                                        <p class="user-name mb-0">Admin User Registration</p>
+                                    </div>
+                                </a>
+                                {{!-- <ul class="dropdown-menu dropdown-menu-end"> --}}
+                                    {{!-- <li><a class="dropdown-item" href="javascript:;"><i
+                                                class="bx bx-user"></i><span>Profile</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="javascript:;"><i
+                                                class="bx bx-cog"></i><span>Settings</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="javascript:;"><i
+                                                class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                                    </li> --}}
+
+
+                                    <li>
+                                        <div class="dropdown-divider mb-0"></div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                </nav>
+            </div>
+			
+		</header> 
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<!-- <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">User Profile</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">User Profilep</li>
+							</ol>
+						</nav>
+					</div> -->
+					<div class="ms-auto">
+						<div class="btn-group">
+							<!-- <button type="button" class="btn btn-light">Settings</button>
+							<button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span class="visually-hidden">Toggle Dropdown</span>
+							</button> -->
+							<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a class="dropdown-item" href="javascript:;">Action</a>
+								<a class="dropdown-item" href="javascript:;">Another action</a>
+								<a class="dropdown-item" href="javascript:;">Something else here</a>
+								<div class="dropdown-divider"></div>	<a class="dropdown-item" href="javascript:;">Separated link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end breadcrumb-->
+				<form id="registerform"  method="POST" name="registerform"  >
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <div id ="card" class="card">
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-12 col-sm-12">
+                                                <label  for="psw"><b>First Name</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text"class="form-control" placeholder="First Name" name="fname" id="fname" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload Logo</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="logo_file" name="logo_file" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="psw"><b>Last Name</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control"placeholder="Last Name" name="lname" id="lname" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload Background Image</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="bg_img_file" name="bg_img_file" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="psw"><b>Email</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text"class="form-control" placeholder="Email" name="email" id="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload SOS Image</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="sos_image_file" name="sos_image_file" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="email"><b>Organization</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text"class="form-control" placeholder="Enter Organization" name="oname" id="organization" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload Inform Image</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="inform_image" name="inform_image" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="psw"><b>Referral Id</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input type="text"class="form-control"  placeholder="Referral id" name="referral_id" id="referral_id" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload gk point image</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="gk_point_file" name="gk_point_file" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="email"><b>Password</b></label>
+                                            </div>
+                                            <div class="col-sm-12"></div>
+                                            <input type="password"class="form-control"  placeholder="Enter Password" name="pwd" id="pwd" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label  for="psw"><b>upload Report Image</b></label>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="file" id="report_image" name="report_image" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <div class="col-sm-3 col-sm-9">
+                                                <label for="cpwd"><b> Confirm Password</b></label>
+                                            </div>
+                                            <div class="col-sm-9"></div>
+                                            <div class="col-sm-12"></div>
+                                            <input type="password"class="form-control"  placeholder="Confirm Password" name="cpwd" id="cpwd" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-sm-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="1" id="bap_module_status" name="bap_module_status">
+                                                    <label class="form-check-label" for="bap_module_status"> Disable BAP Module</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="1" id="ambulance_module_status" name="ambulance_module_status">
+                                                    <label class="form-check-label" for="ambulance_module_status">Disable Ambulance Module</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-9">
+                                            <button type="submit" class="registerbtn">Register</button>
+                                            <!-- <input type="button" class="btn btn-light px-4" value="Save Changes" /> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </form>	
+                <form id="bulkUpload" method="POST" name="bulkUpload">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="check" class="check">
+                                    <input id="check" class="form-check-input" type="checkbox" name=" Upload through file" onclick="handleClick(this);"/>
+                                    <label for="check">Upload through file</label><br><br>
+                                    <input type="file" name="bulkupfile" id="bulkupfile" accept=".csv,.xls,.xlsx"/>
+                                    <br><br>
+                                    {{!-- <input type="submit" value="Submit" style="height:30px; width:80px/> --}}
+                                    <button type="submit" class="bulkUpload">Register</button>
+                                    <p id="size"></p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+			</div>
+		</div>
+
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		 <!-- <footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer> -->
+	</div> 
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+    		<script>
+
+ function fileValidation(id,name) {
+            var fileInput =
+                document.getElementById(id);
+             
+            var filePath = fileInput.value;
+         
+            // Allowing file type
+            var allowedExtensions =
+                    /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+             
+            if (!allowedExtensions.exec(filePath)) {
+                alert('invalid file type of '+  name +'. Image type must be jpg,png,gif');
+                fileInput.value = '';
+                return false;
+            }
+       return true;
+        }
+
+
+        
+		 function fileValidationcsv(id) {
+            var fileInput =
+                document.getElementById(id);
+             
+            var filePath = fileInput.value;
+         
+            // Allowing file type
+            var allowedExtensions =
+                    /(\.csv|\.CSV)$/i;
+             
+            if (!allowedExtensions.exec(filePath)) {
+                alert('invalid file type must be csv');
+                fileInput.value = '';
+                return false;
+            }
+       return true;
+}
+    </script>
+      <script>
+	 jQuery(document).ready(function () {
+	 jQuery("#registerform").submit(function(e) {
+    e.preventDefault();    
+
+     if (jQuery('#logo_file').val() == '') { }else { fileValidation('logo_file','Logo'); }
+	  if (jQuery('#bg_img_file').val() == '') { }else { fileValidation('bg_img_file','Background Image'); }
+	   if (jQuery('#sos_image_file').val() == '') { }else { fileValidation('sos_image_file','SOS Image'); }
+	    if (jQuery('#inform_image').val() == '') { }else { fileValidation('inform_image','Inform Image'); }
+		 if (jQuery('#gk_point_file').val() == '') { }else { fileValidation('gk_point_file','GK Point Image'); }
+		  if (jQuery('#report_image').val() == '') { }else { fileValidation('report_image','Report Image'); }
+          
+    var formData = new FormData(this);
+
+    jQuery.ajax({
+        url: 'https://dashboard.helpx.live/add_user_m',
+        type: 'POST',
+        data: formData,
+        mimeType: "multipart/form-data",
+        success: function (data) {
+             const obj = JSON.parse(data);
+             if(obj.status=="submitted on db"){
+                 alert('User successfully registor');
+
+             }else{
+                 			 alert('please try again');
+             }
+
+              location.replace("https://dashboard.helpx.live/app");
+        },
+        cache: false,
+        contentType: false,
+        processData: false
+    });
+     return false;
+});
+
+ 	});
+
+	 jQuery(document).ready(function () {
+	 jQuery("#bulkUpload").submit(function(e) {
+    e.preventDefault();    
+
+      fileValidationcsv('bulkupfile');
+          
+    var formData = new FormData(this);
+
+    jQuery.ajax({
+        url: 'https://dashboard.helpx.live/St_bluck',
+        type: 'POST',
+        data: formData,
+        mimeType: "multipart/form-data",
+        success: function (data) {
+             const obj = JSON.parse(data);
+             if(obj.status=="submitted on db"){
+                 alert('User successfully registor');
+
+             }else{
+                 			 alert('please try again');
+             }
+
+              alert('thank you!');
+        },
+        cache: false,
+        contentType: false,
+        processData: false
+    });
+     return false;
+});
+
+ 	});     
+	
+
+	</script>
+        <script>
+    Filevalidation = () => {
+        const fi = document.getElementById('file');
+        // Check if any file is selected.
+        if (fi.files.length > 0) {
+            for (const i = 0; i <= fi.files.length - 1; i++) {
+ 
+                const fsize = fi.files.item(i).size;
+                const file = Math.round((fsize / 1024));
+                // The size of the file.
+                if (file >= 2048) {
+                    alert(
+                      "File too Big, please select a file less than 2mb");
+                } 
+                    document.getElementById('size').innerHTML = '<b>'
+                    + file + '</b> KB';
+                }
+            }
+        }
+</script>
+<script>
+ function handleClick(checkbox){ 
+    if(jQuery('input[id=check]').is(':checked')){
+  $("#registerform :input").prop("disabled", true);
+ }else{
+  $("#registerform :input").prop("disabled", false);
+ } 
+     $(".registerform").toggleClass("blur");
+     $(".registerform").addClass("blur") }
+
+$('.check').click(function(){ 
+	hideAll();  
+}); 
+</script>
+<script type="text/javascript">
+ if(jQuery('input[id=check]').is(':checked')){
+  $("#registerform :input").prop("disabled", true);
+ }else{
+  $("#registerform :input").prop("disabled", false);
+ }
+</script>  
+
+</body>
+
+</html>
